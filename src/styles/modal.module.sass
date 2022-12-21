@@ -1,0 +1,64 @@
+@import './flex'
+@import './variables'
+@import './_btn'
+
+.overlay
+    position: absolute
+    height: auto
+    top: 5rem 
+    cursor: pointer
+    margin:1rem
+    right:2rem
+    max-width: 300px
+    @include flex
+
+.container
+ background-color: $white
+ border-radius: 0.3rem
+ box-shadow: rgb(100, 100 ,111 , 0.2) 0px 7px 29px 0px 
+ padding:1.6rem
+
+.modalHead
+ margin-bottom: 1.25em
+ padding-bottom: 1.25rem
+ border-bottom: 1px solid $modalHead
+
+.titleModal
+ color:$black
+ font-weight: 700
+ text-align: center
+ font-size: 1rem
+
+.btnClose
+ @include btnClose
+ &:hover
+   background: $hoverClose
+   
+.body
+ @extend .titleModal
+.body button
+ border: none
+ background: $white
+
+.body p 
+    color: $gray
+    font-weight: 200
+
+.cleanContainer button
+ @include btnClear
+ background-color: $orange
+ color: $white
+ &:hover
+  opacity: .6
+//.btnDelete
+ // @include btnClose
+ // padding: .5rem
+
+
+@media (max-width:480px)
+ .titleModal
+   font-size: 1.3rem
+ 
+
+
+

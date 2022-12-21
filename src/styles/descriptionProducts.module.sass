@@ -1,0 +1,75 @@
+@import './variables.sass'
+@import './flex.sass'
+@import './_btn.sass'
+.carouselContainer
+ width: 100%
+ padding: .5rem
+
+.descriptionProduct
+ margin-top: 3rem
+ float: right
+ width:100%
+
+.titleProduct
+ color: $orange
+ letter-spacing: 1px
+ margin-bottom: 1rem
+ font-weight: 700
+
+.subtitle h1
+ @extend .titleProduct
+ color: $black
+ font-size: 3rem
+ width: 70%
+ 
+.infoProduct
+ color:$gray
+ font-weight: 400
+ width: 70%
+ margin-bottom: 1.5rem
+ font-size: 1.2em
+
+.prices
+ font-weight: 700
+ 
+.sectionPrice
+ @mixin flexRow
+ align-items: center
+
+.sectionPrice .price
+  margin-right: 1rem
+  font-size: 2.5rem
+ 
+.sectionPrice .withDiscount
+ color:$orange
+ background-color: $pale-orange
+ width: 3.5rem
+ padding:.3rem
+ @include featuresBtn
+ font-weight: 700
+
+.pricePrev
+  margin-top: .8rem
+  color: $grayish-blue
+  text-decoration: line-through
+ 
+
+@media(max-width:992px)  
+.descriptionProduct
+  height: auto
+  padding:0.5rem
+  margin-left: 2rem
+ 
+@media(max-width:480px)
+.descriptionProduct
+ padding: 0 
+ .subtitle h1
+  font-size: 2.3rem
+  width:100%
+
+@media(min-width:993px)
+  .descriptionProduct
+   width: 55%
+   float: right
+  .infoProduct
+   font-size: 1em

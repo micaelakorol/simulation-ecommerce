@@ -1,0 +1,61 @@
+@import './flex.sass'
+@import './variables.sass'
+@import './_btn.sass'
+
+.containerBtn
+ @include flex
+ @include flexRow
+ flex-wrap: wrap
+ flex-wrap: nowrap
+ justify-content: center
+ 
+.quantity
+    width: 50px
+    height: 48px
+    border: none
+    margin:0 .2rem
+
+.btnAdd
+    width:100%
+
+.btnAdd .addStyle
+ @include featuresBtn
+ @extend .btnAdd
+ background-color:$orange
+ color: $white
+ min-height: 49px
+ font-weight: 600
+ 
+.btn
+ width:20% 
+
+.iconBtn
+ margin-right: 9px
+
+
+@media(max-width:668px)
+.containerBtn
+  width:100%
+  @mixin flexColumn
+  flex-wrap: wrap
+  
+.containerBtn button
+  width: 100%
+  border: none
+  margin: 3px
+
+@media(min-width:669px)
+ .containerBtn
+   @include flexRow
+   flex-wrap: nowrap
+   margin-top: 2rem
+   width: 70%
+
+ .containerBtn button
+   width:20% 
+
+ .btn
+   height: 3rem
+   @include featuresBtn
+   font-size: 1rem
+   border-radius: 2px

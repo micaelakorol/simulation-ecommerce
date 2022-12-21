@@ -1,0 +1,24 @@
+@import './variables'
+$lightOrange: #faaf38
+a
+  margin:.2rem
+  text-decoration: none
+  color: $gray
+  &:hover
+    color: $lightOrange
+
+section a
+  position: relative
+  padding: .4rem 1.2rem
+  transition: all .5s
+
+section a::before
+  content: ''
+  width: 0%
+  height: 2px
+  background: $orange
+  position: absolute
+  bottom: -5px
+  transition: all .5s
+section a:hover::before
+  width: 60%
