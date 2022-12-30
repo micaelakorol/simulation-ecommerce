@@ -2,7 +2,7 @@ import React from "react";
 import { useContext } from "react";
 import btn from "../../../styles/button.module.sass";
 import { UserContext } from "../../../context/Context";
-//btn quantity (medium)
+
 const BtnQuantity = ({ quantity }) => {
   const { cart } = useContext(UserContext);
   return (

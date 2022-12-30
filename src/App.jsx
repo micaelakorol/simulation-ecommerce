@@ -1,18 +1,16 @@
 /* eslint-disable no-undef */
 import React from "react";
-import CarruselImages from "./components-pures/carrusel/CarruselImages";
-import DescriptionProduct from "./components-pures/products/DescriptionProduct";
-import Modal from "./components-pures/modal/Modal";
-import Nav from "./components-pures/nav/Nav";
-import { Helmet } from "react-helmet";
-
+import DescriptionProduct from "./components/productPrincipal/DescriptionProduct";
+import Modal from "./components/modal/Modal";
+import Nav from "./components/nav/Nav";
+import ProductPrincipal from "./components/productPrincipal/ProductPrincipal";
 const App = () => {
   return (
     <>
       <Nav />
-      <CarruselImages />
+     {/** <CarruselImages /> */} 
       <Modal/>
-      <DescriptionProduct />
+      <ProductPrincipal />
     </>
   );
 };

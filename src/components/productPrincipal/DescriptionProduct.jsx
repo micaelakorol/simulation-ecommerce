@@ -3,13 +3,15 @@ import React, { useContext } from "react";
 //import "../../styles/descriptionProducts.css";
 import styles from '../../styles/descriptionProducts.module.sass'
 import { UserContext } from "../../context/Context";
+import CarruselImages from "./CarruselImages";
+import style from '../../styles/productPrincipal.module.sass'
 
 const ProductItem = () => {
   const { addToCart, delFromCart, products } = useContext(UserContext);
 
   return (
     // Description of  product of carousel
-    <main>
+    <>
       <section className={styles.carouselContainer}>
         <div className={styles.descriptionProduct}>
           <div className={styles.titleProduct}>
@@ -44,7 +46,7 @@ const ProductItem = () => {
           ))}
         </div>
       </section>
-    </main>
+    </>
   );
 };
 

@@ -1,7 +1,6 @@
 import React from "react";
 import { useContext } from "react";
 import { UserContext } from "../../../context/Context";
-//import "../../../styles/modal.css";
 import modal from '../../../styles/modal.module.sass'
 import close from '../../../images/icon-close.svg'
 //function close modal cart

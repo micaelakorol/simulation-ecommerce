@@ -2,7 +2,7 @@ import React from "react";
 import { useContext } from "react";
 import { UserContext } from "../../../context/Context";
 import  btn from "../../../styles/button.module.sass";
-//btn add
+
 const BtnAdd = ({ id }) => {
   const { addToCart } = useContext(UserContext);
   return (
